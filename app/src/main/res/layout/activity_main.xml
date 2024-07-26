@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <EditText
+        android:id="@+id/editTextOrderAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Сумма заказа" />
+
+    <SeekBar
+        android:id="@+id/seekBarTipPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="20" />
+
+    <TextView
+        android:id="@+id/textViewTipPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Процент чаевых: 20%" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDish1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Салат - 100 руб." />
+    <CheckBox
+        android:id="@+id/checkBoxDish2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Суп - 100 руб." />
+    <CheckBox
+        android:id="@+id/checkBoxDish3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мясо - 100 руб." />
+    <CheckBox
+        android:id="@+id/checkBoxDish4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рыба- 100 руб." />
+        <CheckBox
+        android:id="@+id/checkBoxDish5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Компот - 100 руб." />
+
+
+
+    <TextView
+        android:id="@+id/textViewOrderTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сумма заказа: 0 руб." />
+
+    <TextView
+        android:id="@+id/textViewTipAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сумма чаевых: 0 руб." />
+
+    <TextView
+        android:id="@+id/textViewTotalWithTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Общая сумма с чаевыми: 0 руб." />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
